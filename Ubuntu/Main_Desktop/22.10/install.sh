@@ -28,7 +28,7 @@ sudo add-apt-repository "deb http://repository.spotify.com stable non-free"
 sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
 sudo apt install -y libc++1 curl git cmake python3-pip openssh-server python3 docker.io docker-compose transmission g++ build-essential ascii 
 sudo apt install -y gimp nextcloud-client spotify-client inkspace timeshift
-
+echo finished this part
 #Run downloaded packages
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 sudo dpkg -i discord-0.0.25.deb
