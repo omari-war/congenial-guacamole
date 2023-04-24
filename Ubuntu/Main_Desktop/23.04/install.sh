@@ -48,6 +48,8 @@ export PATH="/home/ubuntu/snap/flutter/common/flutter"
 #Snap packages
 sudo snap install code --classic
 sudo snap install spotify
+sudo snap install inkscape
+sudo snap install postman
 #Android studio install
 sudo snap install android-studio --classic
 
