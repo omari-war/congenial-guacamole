@@ -10,9 +10,6 @@ sudo apt -y upgrade
 sudo sed -i 's/^#.*WaylandEnable=.*/WaylandEnable=false/' /etc/gdm3/custom.conf
 
 #random
-echo "deb http://repository.spotify.com stable non-free" | sudo tee /etc/apt/sources.list.d/spotify.list
-curl -sS https://download.spotify.com/debian/pubkey_0D811D58.gpg | sudo apt-key add -
-sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 7A3A762FAFD4A51F
 
 #download packages
 cd Downloads
@@ -25,19 +22,22 @@ wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
 sudo add-apt-repository ppa:nextcloud-devs/client
 
 # Install packages and applications
-sudo apt install make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
+sudo apt install -y make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
 sudo apt update
 sudo apt install -y libc++1 curl git cmake python3-pip openssh-server python3 docker.io docker-compose transmission g++ build-essential ascii 
 sudo apt autoremove
 sudo apt update
-sudo apt install -y nextcloud-client inkspace timeshift chrome-gnome-shell adb scrcpy 
+sudo apt install -y nextcloud-client timeshift chrome-gnome-shell adb scrcpy 
 
 sudo apt update
 #Run downloaded packages
 cd Downloads
 sudo dpkg -i google-chrome-stable_current_amd64.deb
+sudo apt --fix-broken install
 sudo dpkg -i discord-0.0.26.deb
+sudo apt --fix-broken install
 sudo dpkg -i iriunwebcam-2.8.deb
+sudo apt --fix-broken install
 cd ..
 
 #start pakages
