@@ -51,7 +51,7 @@ git config --global user.email "omari.warner@outlook.com"
 sudo snap install flutter --classic
 export PATH="/home/ubuntu/snap/flutter/common/flutter"
 #Snap packages
-sudo snap remove code --classic
+sudo snap install code --classic
 sudo snap install spotify
 #Android studio install
 sudo snap install android-studio --classic
