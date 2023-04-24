@@ -17,14 +17,13 @@ wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 wget https://dl.discordapp.net/apps/linux/0.0.26/discord-0.0.26.deb
 wget https://iriun.gitlab.io/iriunwebcam-2.8.deb
 cd ..
-wget -O- https://aka.ms/install-vscode-server/setup.sh | sh
 #add apt repository
 sudo add-apt-repository ppa:nextcloud-devs/client
 
 # Install packages and applications
 sudo apt install -y make libssl-dev libghc-zlib-dev libcurl4-gnutls-dev libexpat1-dev gettext unzip -y
 sudo apt update
-sudo apt install -y libc++1 curl git cmake python3-pip openssh-server python3 docker.io docker-compose transmission g++ build-essential ascii 
+sudo apt install -y libc++1 curl git cmake python3-pip openssh-server python3 g++ build-essential ascii 
 sudo apt autoremove
 sudo apt update
 sudo apt install -y nextcloud-client timeshift chrome-gnome-shell adb scrcpy 
